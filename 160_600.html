@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<title>Animated Banner 160_600</title>
+	<style>
+		#banner {
+			width: 160px; height: 600px; background-color: #090B20; animation: createBanner 0.15s ease-out 0.25s 1 backwards;
+		}
+		#logo {
+			height: auto; width: 160px; background-color: #090B20; animation: flyLogo 1s ease-in-out 0.50s backwards;
+		}
+		#text {
+			font-family: 'Lato', sans-serif; color:#090B20; text-align: center; text-transform: uppercase; background-color: #FFFFFF;  animation: flyText 0.25s ease-out 1s 1 backwards;
+		}
+		#bannerText {
+			font-family: 'Lato', sans-serif; color:#FFFFFF; text-align: center; 
+			padding: 25px 10px 60px 10px; text-transform: uppercase; font-size: 100%; margin: 0; animation: flyBannerText 1s ease-in-out 2s 1 backwards;
+		}
+		#contact {
+			font-family: 'Lato', sans-serif; color:#FFFFFF; text-align: center; text-transform: uppercase; animation: flyContact 1s ease-in-out 2.25s 1 backwards;
+		}
+		#button {
+			text-align: center; margin-top: 15px; margin-bottom: 50px; animation: flyButton 1s ease-in-out 2.5s 1 backwards;
+		}
+		a {
+			text-decoration: none; font-family: 'Lato', sans-serif; font-size: 20px; font-weight: bold; color:#FFFFFF; text-transform: uppercase; background-color: #090B20; padding: 40px 10px 40px 10px; text-align: center; border: 2px solid #4CAF50; border-color: #FFFFFF;
+		}
+		a:hover {
+			color: #090B20;background-color: #FFFFFF;
+		}
+		#strip {
+			width: 100%; height: 30px; margin-top: 10px; background-color: #FFFFFF; animation: flyStrip 1s ease-in-out 0.25s 1 backwards;
+		}
+		@keyframes flyLogo {
+			0% {opacity: 0; background-color:#090B20; }
+			100% {opacity: 1}
+
+		}
+		@keyframes flyText {
+			0% {opacity: 0; background-color:#090B20; }
+			100% {opacity: 1}
+		}
+		@keyframes createBanner {
+			0% {height: 0px;}
+			100% {height: 600px;}
+		}
+		@keyframes flyBannerText {
+			0% {opacity: 0; background-color:#090B20; }
+			100% {opacity: 1}
+		}
+		@keyframes flyButton {
+			0% {opacity: 0;  background-color:#090B20; }
+			100% {opacity: 1}
+		}
+		@keyframes flyContact {
+			0% {opacity: 0;  background-color:#090B20; }
+			100% {opacity: 1}
+		}
+		@keyframes flyStrip {
+			0% {opacity: 0; background-color:#090B20; }
+			100% {opacity: 1}
+		}
+		@keyframes repeatBanner: {
+			0% {opacity: 0; background-color:#090B20; }
+			100% {opacity: 1}
+		}
+	</style>
+</head>
+<body>
+<div id="banner">
+		<div id="logo">
+			<img src="logo.png" width="160px" ">
+		</div><div id="text">
+			<h3 style="margin-top: 0; padding: 15px 5px 15px 5px;">Let's Turn Ideas into Apps</h3>
+		</div><div id="subBanner">
+		</div>
+		<div id="bannerText" align="center">
+			<h2 style="margin-top: 0;">Helping Startups Globally</h2>
+		</div>
+		<div id="button">
+				<a href="#"> Let's Do It!</a>
+			</div><div id="contact">
+				<h3 style="margin: 0; padding-top: 35px; " >Contact us: </h3>
+				<p style="letter-spacing: 1px; margin-bottom: 30px;">info@pixpal.in</p>
+				<div id="strip">
+				</div>
+			</div>
+	</div>
+</body>
+</html>
